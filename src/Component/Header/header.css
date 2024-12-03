@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  padding: 5px 16px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  justify-content: space-between;
+  box-shadow: 0px 0px 3px #ccc;
+}
+
+.logo {
+  height: 40px;
+}
+.header_left {
+  display: flex;
+  align-items: center;
+}
+.header_search {
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 0px 20px;
+  height: 40px;
+}
+.search_icon {
+  color: gray;
+  font-weight: bold;
+}
+
+.header_search input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  min-width: 200px;
+  margin-left: 5px;
+}
+.header_search input::placeholder {
+  font-size: 18px;
+}
+
+/* middle header section */
+.header_middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_option {
+  padding: 5px 40px;
+  cursor: pointer;
+}
+.header_option:hover {
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+.header_option svg {
+  color: gray;
+}
+.header_option svg:hover {
+  color: #2381fa;
+}
+.header_option--active {
+  position: relative;
+}
+.header_option--active svg {
+  color: #2381fa !important;
+}
+.header_option--active ::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  background-color: #2381fa;
+}
+
+/* header left section */
+.profile_avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.header_right {
+  display: flex;
+  align-items: center;
+}
+.header_right .MuiButtonBase-root {
+  width: 40px;
+  height: 40px;
+  margin: 0px 8px;
+  background-color: whitesmoke;
+  color: #000;
+}
